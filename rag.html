@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG System with Evidence Highlighting</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔍 RAG System</h1>
+            <p>Upload PDFs, ask questions, and see highlighted evidence</p>
+        </div>
+
+        <div class="main-content">
+            <div class="left-panel">
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-icon">📄</div>
+                    <h3>Drop PDF files here or click to upload</h3>
+                    <p>Supports multiple PDF documents</p>
+                    <input type="file" class="file-input" id="fileInput" accept=".pdf" multiple>
+                </div>
+
+                <div id="status"></div>
+
+                <div class="query-section">
+                    <input type="text" class="query-input" id="queryInput" placeholder="Ask a question about your documents..." disabled>
+                    <button class="btn" id="askButton" disabled>Ask Question</button>
+                    <button class="btn" id="clearButton">Clear All</button>
+                </div>
+
+                <div class="answer-section" id="answers"></div>
+            </div>
+
+            <div class="right-panel">
+                <div class="controls">
+                    <button class="btn" id="prevPage" disabled>← Previous</button>
+                    <div class="page-info" id="pageInfo">No document loaded</div>
+                    <button class="btn" id="nextPage" disabled>Next →</button>
+                </div>
+                
+                <div class="pdf-viewer" id="pdfViewer">
+                    <div style="text-align: center; padding: 50px; color: #666;">
+                        Upload a PDF document to begin
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
