@@ -1,6 +1,6 @@
 # wannabe_rag_assignment 🤪
  
-A lightweight, browser-based attempt at mimicking Retrieval-Augmented Generation (RAG) behavior using plain JavaScript — no backend required. Upload a PDF, get a summary of its contents, and ask questions about what's inside it.
+A lightweight, browser-based attempt at mimicking Retrieval-Augmented Generation (RAG) behavior using plain JavaScript — purely client side. Upload a PDF, get a summary of its contents, and ask questions about what's inside it.
 
 ## What it does
  
